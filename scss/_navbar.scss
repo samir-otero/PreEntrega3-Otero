@@ -1,0 +1,33 @@
+#header {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+
+    .navbar {
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+
+        .navbar-brand {
+            width: 15%;
+            height: auto;
+            padding: 0px 2.5rem;
+
+            img {
+                width: 6rem;
+                height: auto;
+                margin: 0px;
+            }
+        }
+
+        ul {
+            a {
+                transition: 0.5s;
+
+                &:hover {
+                    text-decoration: underline;
+                    scale: 1.1;
+                }
+            }
+        }
+    }
+}

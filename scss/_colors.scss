@@ -1,0 +1,104 @@
+/*colores de fondo*/
+$color-principal: #C6B6FF;
+$color-secundario: #8452FF;
+$color-terciario: #a17efa;
+$color-cuaternario: #90D4DF;
+$color-blanco: #EAEAEA;
+$color-negro: #242424fc;
+
+/*colores de texto*/
+$color-titulo: #5F59A9;
+$color-subitutlo: #5F59A9;
+$color-texto: #5F59A9;
+
+/*colores del navbar*/
+$color-navbar: #c6b6ff82;
+$color-item-navbar: #8452FF;
+$color-item-navbar-hovered: #3f07fa;
+$color-item-navbar-visited: #6e56be;
+
+/*navbar*/
+#header {
+    .navbar {
+        background: $color-navbar;
+
+        ul {
+            a {
+                color: $color-item-navbar;
+
+                &:hover {
+                    color: $color-item-navbar-hovered;
+                }
+
+                &:visited {
+                    color: $color-item-navbar-visited;
+                }
+            }
+        }
+    }
+}
+
+/*iconos*/
+.stickyicon-list {
+    a {
+        color: $color-negro;
+
+        &:hover {
+            color: $color-blanco;
+        }
+    }
+}
+
+/*páginas*/
+body {
+    background-color: $color-blanco;
+}
+
+main {
+    .texto-bienvenida {
+        background: $color-cuaternario;
+
+        h3 {
+            color: $color-titulo
+        }
+
+        span {
+            color: $color-subitutlo;
+        }
+
+        p {
+            color: $color-texto;
+        }
+    }
+
+    .segunda-seccion {
+        .tarjetas {
+            background-color: $color-terciario;
+        }
+
+        .contenedores {
+            background-color: $color-blanco;
+        }
+    }
+
+    .bloques {
+        background-color: $color-principal;
+    }
+}
+
+
+/*footer*/
+.footer {
+    background-color: $color-secundario;
+}
+
+.footer-elemento {
+    h3 {
+        color: $color-negro;
+    }
+
+    span {
+        color: $color-negro;
+    }
+
+}

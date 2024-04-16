@@ -1,0 +1,496 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+#header .navbar {
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+#header .navbar .navbar-brand {
+  width: 15%;
+  height: auto;
+  padding: 0px 2.5rem;
+}
+#header .navbar .navbar-brand img {
+  width: 6rem;
+  height: auto;
+  margin: 0px;
+}
+#header .navbar ul a {
+  transition: 0.5s;
+}
+#header .navbar ul a:hover {
+  text-decoration: underline;
+  scale: 1.1;
+}
+
+.stickyicon-list {
+  position: fixed;
+  top: 40%;
+  z-index: 2;
+}
+.stickyicon-list a {
+  display: block;
+  text-align: center;
+  padding: 20% 50%;
+  font-size: 2rem;
+  transition: transform 300ms;
+  opacity: 0.7;
+}
+.stickyicon-list a:hover {
+  width: 10px;
+  transform: scale(1.3);
+}
+
+body #first-photo {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+}
+body div .main-photo {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+main .primera-seccion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+main .primera-seccion .foto-1-primera-seccion {
+  grid-area: 1/1/4/2;
+}
+main .primera-seccion .foto-1-primera-seccion img {
+  width: 100%;
+  height: auto;
+}
+main .primera-seccion .texto-bienvenida {
+  grid-area: 1/2/3/3;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+main .primera-seccion .texto-bienvenida h3 {
+  font-size: 500%;
+  padding-top: 5%;
+}
+main .primera-seccion .texto-bienvenida span {
+  font-size: 280%;
+  line-height: 0.5;
+}
+main .primera-seccion .texto-bienvenida p {
+  font-size: 100%;
+  line-height: 1.5;
+  text-align: justify;
+  padding: 5%;
+}
+main .primera-seccion .foto-2-primera-seccion {
+  grid-area: 3/2/4/3;
+  width: 100%;
+  height: 100%;
+}
+main .primera-seccion .foto-2-primera-seccion img {
+  width: 100%;
+  height: 100%;
+}
+main .segunda-seccion .tarjetas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  padding: 5rem 3rem;
+}
+main .segunda-seccion .tarjetas:hover .contenedores:not(:hover) {
+  filter: grayscale(100%);
+  transform: scale(0.9);
+}
+main .segunda-seccion .tarjeta-1-contenedor {
+  grid-area: 1/1/2/2;
+}
+main .segunda-seccion .tarjeta-2-contenedor {
+  grid-area: 1/2/2/3;
+}
+main .segunda-seccion .tarjeta-3-contenedor {
+  grid-area: 1/3/2/4;
+}
+main .segunda-seccion .contenedores {
+  width: 80%;
+  height: auto;
+  justify-self: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(91, 91, 91, 0.411);
+  padding: 5% 10px;
+  display: flex;
+  transition: 0.5s;
+}
+main .segunda-seccion .tarjeta {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+main .segunda-seccion .tarjeta span {
+  font-size: large;
+  padding: 1%;
+  align-self: center;
+  line-height: 1;
+  padding-bottom: 5%;
+}
+main .segunda-seccion .tarjeta img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  padding: 1%;
+  align-self: center;
+}
+
+main .bloques {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+main .bloque {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+main .bloque .foto {
+  display: flex;
+  justify-content: center;
+}
+main .bloque .descripcion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10%;
+}
+main .bloque img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+body main .galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+body main .galeria img {
+  width: 100%;
+  height: auto;
+  transition: 0.7s;
+}
+body main .galeria img:hover {
+  transform: scale(0.9);
+  border-radius: 20px;
+}
+
+main .mapa-contenedor {
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+main .mapa-contenedor .texto-mapa {
+  width: 40%;
+  margin: 0% 5%;
+}
+main .mapa-contenedor .texto-mapa h3 {
+  text-align: center;
+}
+main .mapa-contenedor .texto-mapa p {
+  text-align: center;
+}
+main .mapa-contenedor .mapa {
+  width: 60%;
+}
+
+main .contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2%;
+}
+main .contacto p {
+  width: 75%;
+  text-align: center;
+}
+main .contacto .form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: 1%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 3% 15%;
+  justify-content: center;
+}
+
+.footer-elemento {
+  width: 25%;
+  height: auto;
+  text-align: justify;
+}
+
+.logo-footer img {
+  width: 60%;
+  height: auto;
+}
+
+@media screen and (max-width: 500px) {
+  header .navbar .navbar-brand img {
+    width: 4rem;
+    height: auto;
+  }
+  body main .primera-seccion {
+    display: flex;
+    flex-direction: column;
+  }
+  body main .primera-seccion .texto-bienvenida h3 {
+    font-size: 300%;
+  }
+  body main .primera-seccion .texto-bienvenida span {
+    font-size: 150%;
+  }
+  body main .primera-seccion .texto-bienvenida p {
+    font-size: 80%;
+  }
+  body main .segunda-seccion .tarjetas {
+    padding: 3rem 1rem;
+    gap: 0.5rem;
+  }
+  body main .segunda-seccion .tarjetas .contenedores {
+    width: 100%;
+    padding: 5% 5px;
+  }
+  body main .segunda-seccion .tarjetas .contenedores .tarjeta span {
+    text-align: center;
+    font-size: 100%;
+  }
+  body main .bloques {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+  }
+  body main .bloques .bloque {
+    display: flex;
+    flex-direction: column;
+  }
+  body main .bloques .bloque .foto-show {
+    display: none;
+  }
+  body main .bloques .bloque .foto-show img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+  footer .footer {
+    padding: 1% 5%;
+  }
+  footer .footer .logo-footer img {
+    width: 80%;
+  }
+  footer .footer .footer-elemento {
+    text-align: center;
+  }
+  footer .footer .footer-elemento h3 {
+    font-size: 100%;
+  }
+  footer .footer .footer-elemento span {
+    font-size: 75%;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 959px) {
+  header .navbar .navbar-brand img {
+    width: 5rem;
+    height: auto;
+  }
+  body main .primera-seccion {
+    display: flex;
+    flex-direction: column;
+  }
+  body main .primera-seccion .texto-bienvenida h3 {
+    font-size: 400%;
+  }
+  body main .primera-seccion .texto-bienvenida span {
+    font-size: 200%;
+  }
+  body main .primera-seccion .texto-bienvenida p {
+    font-size: 90%;
+  }
+  body main .segunda-seccion .tarjetas {
+    padding: 4rem 2rem;
+    gap: 1rem;
+  }
+  body main .segunda-seccion .tarjetas .contenedores {
+    width: 90%;
+    padding: 5% 8px;
+  }
+  body main .segunda-seccion .tarjetas .contenedores .tarjeta span {
+    text-align: center;
+    font-size: 100%;
+  }
+  body main .bloques .bloque .foto-inv {
+    display: none;
+  }
+}
+footer .footer {
+  padding: 2% 10%;
+}
+footer .footer .logo-footer img {
+  width: 70%;
+}
+footer .footer .footer-elemento {
+  text-align: center;
+}
+footer .footer .footer-elemento h3 {
+  font-size: 130%;
+}
+footer .footer .footer-elemento span {
+  font-size: 100%;
+}
+
+@media screen and (min-width: 960px) {
+  main .bloques .bloque .foto-inv {
+    display: none;
+  }
+}
+/*colores de fondo*/
+/*colores de texto*/
+/*colores del navbar*/
+/*navbar*/
+#header .navbar {
+  background: rgba(198, 182, 255, 0.5098039216);
+}
+#header .navbar ul a {
+  color: #8452FF;
+}
+#header .navbar ul a:hover {
+  color: #3f07fa;
+}
+#header .navbar ul a:visited {
+  color: #6e56be;
+}
+
+/*iconos*/
+.stickyicon-list a {
+  color: rgba(36, 36, 36, 0.9882352941);
+}
+.stickyicon-list a:hover {
+  color: #EAEAEA;
+}
+
+/*páginas*/
+body {
+  background-color: #EAEAEA;
+}
+
+main .texto-bienvenida {
+  background: #90D4DF;
+}
+main .texto-bienvenida h3 {
+  color: #5F59A9;
+}
+main .texto-bienvenida span {
+  color: #5F59A9;
+}
+main .texto-bienvenida p {
+  color: #5F59A9;
+}
+main .segunda-seccion .tarjetas {
+  background-color: #a17efa;
+}
+main .segunda-seccion .contenedores {
+  background-color: #EAEAEA;
+}
+main .bloques {
+  background-color: #C6B6FF;
+}
+
+/*footer*/
+.footer {
+  background-color: #8452FF;
+}
+
+.footer-elemento h3 {
+  color: rgba(36, 36, 36, 0.9882352941);
+}
+.footer-elemento span {
+  color: rgba(36, 36, 36, 0.9882352941);
+}
+
+@font-face {
+  font-family: "caturrita";
+  src: url(../fonts/caturrita/caturrita-display.otf);
+}
+@font-face {
+  font-family: "innova";
+  src: url(../fonts/innova/InnovaAlt-Demi.otf);
+}
+@font-face {
+  font-family: "black-mango";
+  src: url(../fonts/black-mango/black-mango.ttf);
+}
+main .primera-seccion .texto-bienvenida h3 {
+  font-family: "caturrita";
+}
+main .primera-seccion .texto-bienvenida span {
+  font-family: "innova";
+}
+main .primera-seccion .texto-bienvenida p {
+  font-family: "innova";
+}
+main .segunda-seccion .tarjeta span {
+  font-family: "caturrita";
+}
+main .bloque .descripcion h3 {
+  font-size: 250%;
+  margin: 3% 0%;
+  font-family: "caturrita";
+}
+main .bloque .descripcion p {
+  font-family: "innova";
+  font-size: 110%;
+}
+main .mapa-contenedor .texto-mapa h3 {
+  font-size: 250%;
+  margin: 3% 0%;
+  font-family: "caturrita";
+}
+main .mapa-contenedor .texto-mapa p {
+  font-family: "innova";
+  font-size: 110%;
+}
+main .contacto h3 {
+  font-size: 250%;
+  margin: 3% 0%;
+  font-family: "caturrita";
+}
+main .contacto p {
+  font-family: "innova";
+  font-size: 110%;
+}
+
+.footer-elemento {
+  font-family: "caturrita";
+}
+
+/*# sourceMappingURL=styles.css.map */

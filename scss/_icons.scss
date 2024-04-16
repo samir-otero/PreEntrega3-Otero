@@ -1,0 +1,19 @@
+.stickyicon-list {
+    position: fixed;
+    top: 40%;
+    z-index: 2;
+
+    a {
+        display: block;
+        text-align: center;
+        padding: 20% 50%;
+        font-size: 2rem;
+        transition: transform 300ms;
+        opacity: 0.7;
+
+        &:hover {
+            width: 10px;
+            transform: scale(1.3);
+        }
+    }
+}

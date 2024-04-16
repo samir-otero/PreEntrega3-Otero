@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 3% 15%;
+    justify-content: center;
+
+}
+
+.footer-elemento {
+    width: 25%;
+    height: auto;
+    text-align: justify;
+}
+
+.logo-footer {
+    img {
+        width: 60%;
+        height: auto;
+    }
+}

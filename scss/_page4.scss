@@ -1,0 +1,25 @@
+main {
+    .mapa-contenedor {
+        display: flex;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+
+        .texto-mapa {
+            width: 40%;
+            margin: 0% 5%;
+
+            h3 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+
+        .mapa {
+            width: 60%;
+        }
+    }
+}

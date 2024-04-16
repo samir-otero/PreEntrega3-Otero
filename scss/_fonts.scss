@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'caturrita';
+  src: url(../fonts/caturrita/caturrita-display.otf);
+}
+
+@font-face {
+  font-family: 'innova';
+  src: url(../fonts/innova/InnovaAlt-Demi.otf);
+}
+
+@font-face {
+  font-family: "black-mango";
+  src: url(../fonts/black-mango/black-mango.ttf);
+}
+
+$titulo: 'caturrita';
+$subtitulo: 'innova';
+$texto: 'black-mango';
+
+@mixin titulo{
+  font-size: 250%;
+  margin: 3% 0%;
+  font-family: $titulo;
+}
+
+@mixin texto{
+  font-family: $subtitulo;
+  font-size: 110%;
+}
+
+main {
+  .primera-seccion {
+    .texto-bienvenida {
+      h3 {
+        font-family: $titulo;
+      }
+
+      span {
+        font-family: $subtitulo;
+      }
+
+      p {
+        font-family: $subtitulo;
+      }
+    }
+  }
+
+  .segunda-seccion {
+    .tarjeta {
+      span {
+        font-family: $titulo;
+      }
+    }
+  }
+
+  .bloque {
+    .descripcion {
+      h3 {
+        @include titulo;
+      }
+
+      p {
+        @include texto;
+      }
+    }
+  }
+  .mapa-contenedor{
+    .texto-mapa{
+      h3{
+        @include titulo;
+      }
+      p{
+        @include texto;
+      }
+    }
+  }
+
+  .contacto{
+    h3{
+      @include titulo;
+    }
+    p{
+      @include texto;
+    }
+  }
+}
+
+.footer-elemento{
+  font-family: $titulo;
+}
